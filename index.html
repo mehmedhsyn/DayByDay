@@ -1,87 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>DayByDay – Privacy Policy / Gizlilik Politikası</title>
-<style>
-  :root {
-    --bg: #fafaf8; --ink: #1c1c1c; --muted: #6b6b6b; --line: #e6e6e2; --accent: #5f7f66;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #121212; --ink: #f0f0f0; --muted: #a0a0a0; --line: #2a2a2a; --accent: #8fb597; }
-  }
-  html { background: var(--bg); }
-  body {
-    margin: 0 auto; max-width: 720px; padding: 32px 20px 64px;
-    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--ink); background: var(--bg);
-  }
-  h1 { font-size: 28px; margin: 0 0 4px; }
-  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 8px; }
-  h3 { font-size: 16px; margin: 22px 0 4px; }
-  p, li { margin: 6px 0; }
-  ul { padding-left: 22px; }
-  .muted { color: var(--muted); font-size: 14px; }
-  nav { margin: 16px 0 8px; }
-  nav a { color: var(--accent); margin-right: 16px; }
-  a { color: var(--accent); }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DayByDay</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent-color: #3b82f6;
+            --border-color: #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --text-main: #f8fafc;
+                --text-muted: #94a3b8;
+                --accent-color: #60a5fa;
+                --border-color: #334155;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .last-updated {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            background-color: rgba(59, 130, 246, 0.08);
+            padding: 16px;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-email {
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-<section id="en" lang="en">
-<h1>DayByDay – Privacy Policy</h1>
-<p class="muted">Last updated: October 19, 2026</p>
 
-<p>DayByDay (“the app”) is a habit-tracking app. This policy explains what information the app uses and how. In short: your habit data stays on your device, we run no servers that collect it, and we do not show ads or use analytics.</p>
+<div class="container">
+    <h1>DayByDay – Privacy Policy</h1>
+    <div class="last-updated">Last updated: October 20, 2026</div>
 
-<h2>1. Information stored on your device</h2>
-<p>To work, the app stores the following on your device only:</p>
-<ul>
-  <li>Your habits, their schedules and reminder times</li>
-  <li>Your daily completion history, streaks, mood entries and short daily notes</li>
-  <li>The name you optionally enter, and your settings (language, dark mode)</li>
-</ul>
-<p>This data is not sent to the developer. Uninstalling the app removes it from your device. Depending on your phone’s settings, Android’s own device backup may include this data in your Google account; that is controlled by Android and your device settings, not by us.</p>
+    <div class="intro">
+        <strong>DayByDay</strong> (“the app”) is a habit-tracking app. This policy explains what information the app uses and how. In short: your habit data stays on your device, we run no external servers that collect it, and we do not show ads or use tracking analytics.
+    </div>
 
-<h2>2. Optional Google Drive backup</h2>
-<p>If you choose to use backup, you sign in with your Google account and allow the app to use the Google Drive “app data” permission (<code>drive.appdata</code>). The app then saves a backup file of your habit data in a hidden, app-specific folder in <strong>your own</strong> Google Drive, and can restore it later. This folder is not visible in your normal Drive files, and the developer has no access to it or to your Google account content. The app does not read any other files in your Drive.</p>
-<p>You can remove the backup and revoke access at any time in your Google Account settings (Security → Third-party apps &amp; services) and in Google Drive settings (Manage apps → Delete hidden app data).</p>
+    <h2>1. Information stored on your device</h2>
+    <p>To function properly, the app stores the following data locally on your device only:</p>
+    <ul>
+        <li>Your habits, their schedules, and reminder times</li>
+        <li>Your daily completion history, streaks, mood entries, and short daily notes</li>
+        <li>The display name you optionally enter, and your settings (language, dark mode)</li>
+    </ul>
+    <p>This data is never transmitted to the developer's servers. Uninstalling the app permanently removes this data from your device. Depending on your phone’s system settings, Android’s automatic system backup may include this local app data in your personal Google account storage; that process is managed entirely by Android and your device settings, not by us.</p>
 
-<h2>3. Purchases</h2>
-<p>The Pro upgrade (subscription or one-time purchase) is processed entirely by Google Play. We do not receive or store your payment card details. The app only checks with Google Play whether Pro is active on your account. Subscriptions can be managed or cancelled in Google Play under Payments &amp; subscriptions.</p>
+    <h2>2. Optional Google Drive backup</h2>
+    <p>If you choose to enable the backup feature, you sign in using your Google Account. During this step, your Google account ID/email is processed temporarily by Google Sign-In solely to authenticate your identity. We do not collect, store, or view your account credentials.</p>
+    <p>With your consent, the app requests access to the restricted Google Drive "app data" scope (<code>drive.appdata</code>). The app creates and updates a single backup file of your habit data inside a hidden, app-specific directory within your personal Google Drive account. This directory is inaccessible to other applications and invisible in your normal Drive file list. The developer has zero access to your backup files or Google account contents. The app does not read, modify, or delete any other files in your Google Drive.</p>
+    <p>You can revoke the app's access and delete stored backup data at any time via your <strong>Google Account settings</strong> (<em>Security → Third-party apps & services</em>) or directly in <strong>Google Drive settings</strong> (<em>Manage apps → Delete hidden app data</em>).</p>
 
-<h2>4. Notifications and permissions</h2>
-<ul>
-  <li><strong>Notifications:</strong> used for the habit reminders you set. They are created locally on your device.</li>
-  <li><strong>Receive boot completed:</strong> used only to re-schedule your reminders after the phone restarts or the time zone changes.</li>
-  <li><strong>Vibrate:</strong> used for feedback when you complete a habit.</li>
-  <li><strong>Internet:</strong> used only for Google Drive backup and Google Play purchases.</li>
-</ul>
+    <h2>3. Purchases</h2>
+    <p>In-app purchases (such as the Pro upgrade via subscription or one-time payment) are processed entirely by Google Play Billing. We do not receive, process, or store your credit card or financial details. The app only queries Google Play Billing to verify whether an active Pro license is associated with your account. Subscriptions can be managed or canceled anytime via Google Play under <em>Payments & subscriptions</em>.</p>
 
-<h2>5. What we do not do</h2>
-<ul>
-  <li>We do not show advertising.</li>
-  <li>We do not use analytics or tracking tools.</li>
-  <li>We do not sell, rent or share your personal data with third parties.</li>
-  <li>We do not collect your location, contacts, photos or device identifiers.</li>
-</ul>
+    <h2>4. System permissions and notifications</h2>
+    <ul>
+        <li><strong>Notifications:</strong> Used exclusively to deliver the local habit reminders you configure. All notifications are scheduled locally on your device.</li>
+        <li><strong>Receive boot completed:</strong> Used solely to re-schedule your local reminders after your device restarts or when the system time zone changes.</li>
+        <li><strong>Vibrate:</strong> Used to provide haptic feedback when completing a habit.</li>
+        <li><strong>Internet:</strong> Used strictly for communicating with Google Play Billing to verify purchases and, if enabled by you, transferring backup data directly to your personal Google Drive storage.</li>
+    </ul>
 
-<h2>6. Third-party services</h2>
-<p>The app relies on Google Play Billing and, only if you use backup, Google Sign-In and the Google Drive API. These are governed by <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+    <h2>5. What we do not do</h2>
+    <ul>
+        <li>We do not display advertisements.</li>
+        <li>We do not integrate third-party analytics, tracking tools, or advertising SDKs.</li>
+        <li>We do not sell, rent, or share your personal data with third parties.</li>
+        <li>We do not collect your location, contacts, photos, microphone data, or unique hardware identifiers.</li>
+    </ul>
 
-<h2>7. Data retention and your rights</h2>
-<p>Because your data lives on your device (and, if you enable backup, in your own Google Drive), you control it. You can delete it by clearing the app’s data, uninstalling the app, and deleting the hidden backup as described above. If you are in the EU/EEA or another region with data-protection rights, you may contact us with any questions about your data.</p>
+    <h2>6. Third-party services</h2>
+    <p>The app relies on Google Play Billing and, conditionally (only if you choose to use the optional backup feature), Google Sign-In and the Google Drive API. These services operate under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a>.</p>
 
-<h2>8. Children</h2>
-<p>The app is not directed at children under 13 and we do not knowingly collect personal information from them.</p>
+    <h2>7. Data retention and user rights</h2>
+    <p>Because your data resides locally on your device (and inside your personal Google Drive, if backup is enabled), you retain full control over it. You can permanently delete your data by clearing the app’s data in Android settings, uninstalling the app, or removing the hidden app data from your Google Drive account. If you reside in the EU/EEA or another region with applicable data protection laws, you may contact us with any inquiries regarding your data.</p>
 
-<h2>9. Changes to this policy</h2>
-<p>If this policy changes, we will update the date above. Material changes will be reflected in the app or on its Google Play page.</p>
+    <h2>8. Children’s privacy</h2>
+    <p>The app is not directed at children under the age of 13, and we do not knowingly collect personal information from children.</p>
 
-<h2>10. Contact</h2>
-<p>Questions about this policy: <a href="mailto:m3di.dev@gmail.com">m3di.dev@gmail.com</a></p>
-</section>
+    <h2>9. Changes to this policy</h2>
+    <p>If this Privacy Policy is updated, the "Last updated" date at the top of this page will be revised accordingly. Material changes will be communicated within the app or on its Google Play Store listing page.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+    <p class="contact-email"><a href="mailto:m3di.dev@gmail.com">m3di.dev@gmail.com</a></p>
+</div>
+
 </body>
 </html>
